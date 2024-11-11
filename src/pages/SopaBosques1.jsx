@@ -92,9 +92,15 @@ const SopaDeLetrasBosques1 = () => {
                     <li>
                         1. Primer libro del Libro de Mormon
                     </li>
+                    <li>
+                        1. Primer libro del Libro de Mormon
+                    </li>
+                    <li>
+                        1. Primer libro del Libro de Mormon
+                    </li>
                 </div>
             </div>
-            <div className="grid grid-cols-10 gap-1 mb-6">
+            <div className="grid grid-cols-10 mb-6">
                 {sopa.map((fila, i) =>
                     fila.map((letra, j) => {
                         const coordenada = `${i}-${j}`;

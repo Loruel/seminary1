@@ -94,7 +94,7 @@ const SopaDeLetrasMontes = () => {
                     </li>
                 </div>
             </div>
-            <div className="grid grid-cols-10 gap-1 mb-6">
+            <div className="grid grid-cols-10 mb-6">
                 {sopa.map((fila, i) =>
                     fila.map((letra, j) => {
                         const coordenada = `${i}-${j}`;
