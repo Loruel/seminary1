@@ -78,9 +78,9 @@ const SopaDeLetrasMontes = () => {
 
     return (
         <div
-            className="max-w-lg mx-auto p-4 text-white h-screen"
+            className="max-w-lg mx-auto p-4 text-white h-full"
             style={{ backgroundColor: '#022044' }}>
-            <h1 className="text-2xl font-semibold text-center mb-2">
+           <h1 className="text-2xl font-semibold text-center mb-2 mt-4">
                 Sopa de Letras
             </h1>
             <h2 className='text-center text-3xl font-bold mb-4'>
@@ -94,7 +94,7 @@ const SopaDeLetrasMontes = () => {
                     </li>
                 </div>
             </div>
-            <div className="grid grid-cols-10 gap-1">
+            <div className="grid grid-cols-10 gap-1 mb-6">
                 {sopa.map((fila, i) =>
                     fila.map((letra, j) => {
                         const coordenada = `${i}-${j}`;

@@ -12,10 +12,10 @@ export default function Home() {
             }}>
 
             <div className='mb-6 flex flex-col items-center text-white'>
-                <h1 className='font-bold text-2xl'>
+                <h1 className='font-bold text-3xl'>
                     SOPA DE LETRAS
                 </h1>
-                <p className='w-9/12 font-semibold text-base text-center mt-2'>
+                <p className='w-8/12 font-semibold text-base text-center mt-2'>
                     Elige tu barrio y cuando tengas el mensaje de felicitación acercate a tu lider para registrarte.
                 </p>
             </div>
