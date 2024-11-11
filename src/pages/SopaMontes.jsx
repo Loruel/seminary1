@@ -78,7 +78,7 @@ const SopaDeLetrasMontes = () => {
 
     return (
         <div
-            className="max-w-lg mx-auto p-4 text-white"
+            className="max-w-lg mx-auto p-4 text-white h-screen"
             style={{ backgroundColor: '#022044' }}>
             <h1 className="text-2xl font-semibold text-center mb-2">
                 Sopa de Letras
