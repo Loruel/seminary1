@@ -47,7 +47,7 @@ const generarSopa = (palabras, tamaño) => {
 };
 
 const SopaDeLetrasBosques1 = () => {
-    const palabras = ['NEFI'];
+    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAL', 'GENTILES', 'SECRETO'];
     const tamaño = 10;
 
     const [{ sopa, posicionesCorrectas }, setSopaData] = useState({ sopa: [], posicionesCorrectas: [] });
@@ -87,17 +87,35 @@ const SopaDeLetrasBosques1 = () => {
                 BOSQUES 1
             </h2>
             {mensaje && <div className="text-green-500 font-bold mt-4 text-center mb-4">{mensaje}</div>}
-            <div>
-                <div className='mb-6'>
-                    <li>
-                        1. Primer libro del Libro de Mormon
-                    </li>
-                    <li>
-                        1. Primer libro del Libro de Mormon
-                    </li>
-                    <li>
-                        1. Primer libro del Libro de Mormon
-                    </li>
+            <div className='flex justify-center'>
+                <div className='mb-6 text-sm w-11/12'>
+                    <p>
+                        1. ¿Quiénes rechazaron las enseñanzas de Alma y Amulek?
+                    </p>
+                    <p>
+                        2. ¿Qué título militar recibió Moroni?
+                    </p>
+                    <p>
+                        3.¿Qué joven profeta fue designado guardián de las planchas después de Alma?
+                    </p>
+                    <p>
+                        4.¿Qué grupo secreto causó destrucción entre los nefitas y lamanitas?
+                    </p>
+                    <p>
+                        5.¿Cuál es el nombre del juez asesinado por el grupo de Kishkumen?
+                    </p>
+                    <p>
+                        6.¿Qué sacramento introdujo Cristo entre los nefitas en Su visita?
+                    </p>
+                    <p>
+                        7.¿Qué palabra usó Cristo para describir la influencia del evangelio en el mundo?
+                    </p>
+                    <p>
+                        8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán Su voz?
+                    </p>
+                    <p>
+                        9.¿Cómo dijo el Señor que tienen que ser nuestras oraciones?
+                    </p>
                 </div>
             </div>
             <div className="grid grid-cols-10 mb-6">
