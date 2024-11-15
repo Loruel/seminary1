@@ -90,6 +90,15 @@ export default function Home() {
                 </div>
             </div>
 
+            <div className='mt-6 text-white text-center'>
+                <p className='font-semibold'>
+                    Trimestral noviembre 2024
+                </p>
+                <p className='font-bold text-lg'>
+                    Estaca Los Héroes Tecmac
+                </p>
+            </div>
+
         </div>
     )
 }
