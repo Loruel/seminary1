@@ -107,14 +107,14 @@ const SopaDeLetrasBosques1 = () => {
                     <p>
                         8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán su voz?
                     </p>
-                    <p>
+                   <p>
                         9.Lema de las Mujeres Jóvenes: ...con una naturaleza ________y un destino eterno.
                     </p>
                     <p>
-                        10.Lema mutual 2024: "Soy __________ de Jesucristo"
+                        10.Lema de los cuórums del Sacerdocio Aarónico: ...guardaré mis ____________ y utilizaré Su sacerdocio para servir a los demás,...
                     </p>
                     <p>
-                        11.Lema de los cuórums del Sacerdocio Aarónico: ...guardaré mis ____________ y utilizaré Su sacerdocio para servir a los demás,...
+                        11.Lema mutual 2024: "Soy __________ de Jesucristo"
                     </p>
                 </div>
             </div>

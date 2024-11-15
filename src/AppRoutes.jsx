@@ -9,6 +9,7 @@ import SopaDeLetrasHeroes2 from './pages/SopaHeroes2'
 import SopaDeLetrasBosques2 from './pages/SopaBosques2'
 import SopaDeLetrasCuahu from './pages/SopaCuahu'
 import SopaDeLetrasBosques1 from './pages/SopaBosques1'
+import Crucigrama from './pages/crucigrama'
 
 export default function AppRoutes() {
     return (
