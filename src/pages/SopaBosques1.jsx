@@ -47,7 +47,7 @@ const generarSopa = (palabras, tamaño) => {
 };
 
 const SopaDeLetrasBosques1 = () => {
-    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'ARREPENTIMIENTO'];
+    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAMUEL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'ARREPENTIMIENTO'];
     const tamaño = 15;
 
     const [{ sopa, posicionesCorrectas }, setSopaData] = useState({ sopa: [], posicionesCorrectas: [] });
@@ -99,13 +99,13 @@ const SopaDeLetrasBosques1 = () => {
                         5.¿Cuál es el nombre del juez asesinado por el grupo de Kishkumen?
                     </p>
                     <p>
-                        6.¿Qué sacramento introdujo Cristo entre los nefitas en Su visita?
+                        6.¿Qué sacramento introdujo Cristo entre los nefitas en su visita?
                     </p>
                     <p>
-                        7.¿Qué palabra usó Cristo para describir la influencia del evangelio en el mundo?
+                        7.¿Qué profeta profetizó la aparición de una estrella en el cielo como confirmación del nacimiento de Cristo?
                     </p>
                     <p>
-                        8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán Su voz?
+                        8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán su voz?
                     </p>
                     <p>
                         9.Lema de las Mujeres Jóvenes: ...valoro el don del ______________ y procuro mejorar cada día...
