@@ -47,7 +47,7 @@ const generarSopa = (palabras, tamaño) => {
 };
 
 const SopaDeLetrasBosques1 = () => {
-    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAMUEL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'REVELACION'];
+    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAMUEL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'DIVINA'];
     const tamaño = 15;
 
     const [{ sopa, posicionesCorrectas }, setSopaData] = useState({ sopa: [], posicionesCorrectas: [] });
@@ -108,7 +108,7 @@ const SopaDeLetrasBosques1 = () => {
                         8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán su voz?
                     </p>
                     <p>
-                        9.Lema de las Mujeres Jóvenes: ---Busco ___________ personal y actúo de conformidad con ella,...
+                        9.Lema de las Mujeres Jóvenes: ...con una naturaleza ________y un destino eterno.
                     </p>
                     <p>
                         10.Lema mutual 2024: "Soy __________ de Jesucristo"
