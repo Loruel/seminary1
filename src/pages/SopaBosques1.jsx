@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const generarSopa = (palabras, tamaño) => {
     const sopa = Array(tamaño).fill(null).map(() => Array(tamaño).fill(''));
-    const posicionesCorrectas = [];
+    const posicionesCorrectas = new Set();
 
     const colocarPalabra = (palabra) => {
         const direccion = Math.random() > 0.5 ? 'horizontal' : 'vertical';
@@ -16,7 +16,7 @@ const generarSopa = (palabras, tamaño) => {
                 if (palabra.split('').every((letra, idx) => sopa[fila][col + idx] === '' || sopa[fila][col + idx] === letra)) {
                     palabra.split('').forEach((letra, idx) => {
                         sopa[fila][col + idx] = letra;
-                        posicionesCorrectas.push(`${fila}-${col + idx}`);
+                        posicionesCorrectas.add(`${fila}-${col + idx}`);
                     });
                     return true;
                 }
@@ -24,7 +24,7 @@ const generarSopa = (palabras, tamaño) => {
                 if (palabra.split('').every((letra, idx) => sopa[fila + idx][col] === '' || sopa[fila + idx][col] === letra)) {
                     palabra.split('').forEach((letra, idx) => {
                         sopa[fila + idx][col] = letra;
-                        posicionesCorrectas.push(`${fila + idx}-${col}`);
+                        posicionesCorrectas.add(`${fila + idx}-${col}`);
                     });
                     return true;
                 }
@@ -43,12 +43,12 @@ const generarSopa = (palabras, tamaño) => {
         }
     }
 
-    return { sopa, posicionesCorrectas };
+    return { sopa, posicionesCorrectas: Array.from(posicionesCorrectas) };
 };
 
 const SopaDeLetrasBosques1 = () => {
-    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAL', 'GENTILES', 'SECRETO'];
-    const tamaño = 10;
+    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'ARREPENTIMIENTO'];
+    const tamaño = 15;
 
     const [{ sopa, posicionesCorrectas }, setSopaData] = useState({ sopa: [], posicionesCorrectas: [] });
     const [seleccionadas, setSeleccionadas] = useState([]);
@@ -72,24 +72,18 @@ const SopaDeLetrasBosques1 = () => {
         if (todasCorrectas && posicionesCorrectas.length === seleccionadas.length) {
             setMensaje('¡Felicidades! Has encontrado todas las palabras correctamente.');
         } else {
-            setMensaje(''); // Limpiar el mensaje si no todas las palabras están seleccionadas
+            setMensaje('');
         }
     }, [seleccionadas, posicionesCorrectas]);
 
     return (
-        <div
-            className="max-w-lg mx-auto p-4 text-white h-full"
-            style={{ backgroundColor: '#022044' }}>
-            <h1 className="text-2xl font-semibold text-center mb-2 mt-4">
-                Sopa de Letras
-            </h1>
-            <h2 className='text-center text-3xl font-bold mb-4'>
-                BOSQUES 1
-            </h2>
+        <div className="max-w-lg mx-auto p-4 text-white h-full" style={{ backgroundColor: '#022044' }}>
+            <h1 className="text-2xl font-semibold text-center mb-2 mt-4">Sopa de Letras</h1>
+            <h2 className='text-center text-3xl font-bold mb-4'>BOSQUES 1</h2>
             {mensaje && <div className="text-green-500 font-bold mt-4 text-center mb-4">{mensaje}</div>}
             <div className='flex justify-center'>
                 <div className='mb-6 text-sm w-11/12'>
-                    <p>
+                <p>
                         1. ¿Quiénes rechazaron las enseñanzas de Alma y Amulek?
                     </p>
                     <p>
@@ -114,11 +108,22 @@ const SopaDeLetrasBosques1 = () => {
                         8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán Su voz?
                     </p>
                     <p>
-                        9.¿Cómo dijo el Señor que tienen que ser nuestras oraciones?
+                        9.Lema de las Mujeres Jóvenes: ...valoro el don del ______________ y procuro mejorar cada día...
+                    </p>
+                    <p>
+                        10.Lema mutual 2024: "Soy __________ de Jesucristo"
+                    </p>
+                    <p>
+                        11.Lema de los cuórums del Sacerdocio Aarónico: ...guardaré mis ____________ y utilizaré Su sacerdocio para servir a los demás,...
                     </p>
                 </div>
             </div>
-            <div className="grid grid-cols-10 mb-6">
+            <div
+                className="grid mb-12"
+                style={{
+                    gridTemplateColumns: 'repeat(15, minmax(0, 1fr))',
+                }}
+            >
                 {sopa.map((fila, i) =>
                     fila.map((letra, j) => {
                         const coordenada = `${i}-${j}`;
@@ -127,8 +132,7 @@ const SopaDeLetrasBosques1 = () => {
                             <div
                                 key={coordenada}
                                 onClick={() => handleSelect(i, j)}
-                                className={`flex items-center justify-center w-10 h-10 border border-gray-300 text-lg font-semibold cursor-pointer ${isSelected ? 'bg-orange-400 text-white' : 'bg-white text-black'
-                                    }`}
+                                className={`flex items-center justify-center w-6 h-6 border border-gray-800 text-lg font-semibold cursor-pointer ${isSelected ? 'bg-orange-400 text-white' : 'bg-white text-black'}`}
                             >
                                 {letra}
                             </div>
