@@ -95,7 +95,7 @@ export default function Home() {
                     Trimestral noviembre 2024
                 </p>
                 <p className='font-bold text-lg'>
-                    Estaca Los Héroes Tecmac
+                    Estaca Los Héroes Tecámac
                 </p>
             </div>
 
