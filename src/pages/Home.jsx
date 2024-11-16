@@ -11,7 +11,7 @@ export default function Home() {
                 backgroundPosition: 'center'
             }}>
 
-            <div className='mb-6 flex flex-col items-center text-white'>
+            <div className='mb-10 flex flex-col items-center text-white'>
                 <h1 className='font-bold text-3xl'>
                     SOPA DE LETRAS
                 </h1>
@@ -90,7 +90,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='mt-6 text-white text-center'>
+            <div className='mt-10 text-white text-center'>
                 <p className='font-semibold'>
                     Trimestral noviembre 2024
                 </p>

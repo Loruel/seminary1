@@ -47,7 +47,7 @@ const generarSopa = (palabras, tamaño) => {
 };
 
 const SopaDeLetrasBosques1 = () => {
-    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAMUEL', 'GENTILES', 'DISCIPULO' , 'CONVENIOS', 'DIVINA'];
+    const palabras = ['ZORAMITAS', 'CAPITAN', 'HELAMAN', 'GADIANTON', 'PAHORAN', 'SANTACENA', 'SAMUEL', 'GENTILES', 'DISCIPULO', 'CONVENIOS', 'DIVINA'];
     const tamaño = 15;
 
     const [{ sopa, posicionesCorrectas }, setSopaData] = useState({ sopa: [], posicionesCorrectas: [] });
@@ -80,10 +80,10 @@ const SopaDeLetrasBosques1 = () => {
         <div className="max-w-lg mx-auto p-4 text-white h-full" style={{ backgroundColor: '#022044' }}>
             <h1 className="text-2xl font-semibold text-center mb-2 mt-4">Sopa de Letras</h1>
             <h2 className='text-center text-3xl font-bold mb-4'>BOSQUES 1</h2>
-            {mensaje && <div className="text-green-500 font-bold mt-4 text-center mb-4">{mensaje}</div>}
+
             <div className='flex justify-center'>
                 <div className='mb-6 text-sm w-11/12'>
-                <p>
+                    <p>
                         1. ¿Quiénes rechazaron las enseñanzas de Alma y Amulek?
                     </p>
                     <p>
@@ -107,7 +107,7 @@ const SopaDeLetrasBosques1 = () => {
                     <p>
                         8.¿A quiénes se refirió Cristo como las "otras ovejas" que escucharán su voz?
                     </p>
-                   <p>
+                    <p>
                         9.Lema de las Mujeres Jóvenes: ...con una naturaleza ________y un destino eterno.
                     </p>
                     <p>
@@ -140,6 +140,7 @@ const SopaDeLetrasBosques1 = () => {
                     })
                 )}
             </div>
+            {mensaje && <div className="text-green-500 font-bold mt-4 text-center mb-4">{mensaje}</div>}
         </div>
     );
 };
